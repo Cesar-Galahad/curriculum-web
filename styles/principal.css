@@ -1,0 +1,86 @@
+:root{
+   --night: #141414; 
+   --white: #fff;
+   --black: black;
+   --flas-white: #EEF0F2;
+   --Orange-ut: #FF8600;
+   --blue-oxford: #011638;
+   --gray: #747572;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-size: 16px;
+}
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+header{
+    border-bottom: 1px solid var(--blue-oxford);
+}
+.menu{
+    display: none; 
+}
+.logo{
+    width: 180px;
+    padding: 10px;
+}
+.navbar-left ul, .navbar-right ul{
+    list-style: none;
+    padding-right: 50px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.navbar-right{
+    display: flex;
+}
+.navbar-right ul{
+    margin-left: 12px;
+}
+.navbar-left ul li a, .navbar-right ul li a{
+    text-decoration: none;
+    color: var(--gray);
+    padding: 8px;
+    border-radius: 8px;
+}
+.navbar-left ul li a:hover, .navbar-right ul li a:hover{
+    border: 1px solid var(--Orange-ut);
+    color: var(--Orange-ut);
+}
+.main{
+    width: 100%;
+    background-color: #747572;
+}
+.main-card-container{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+.card-schooling{
+    padding: 0 150px;
+}
+.main-body{
+    background-color: var(--flas-white);
+}
+@media(max-width: 640px){
+    .menu{
+        display: block;
+    }
+    .navbar-right ul{
+        display: none;
+    }
+}
