@@ -61,11 +61,12 @@ header{
     border: 1px solid var(--Orange-ut);
     color: var(--Orange-ut);
 }
+
 .main{
     width: 100%;
     background-color: #747572;
 }
-.main-card-container{
+.main-info-container{
     display: flex;
     justify-content: center;
     height: 500px;
@@ -76,11 +77,21 @@ header{
 .main-body{
     background-color: var(--flas-white);
 }
+
+.footer p{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: var(--gray);
+}
 @media(max-width: 640px){
     .menu{
         display: block;
     }
     .navbar-right ul{
         display: none;
+    }
+    .main-info-container{
+        flex-direction: column;
     }
 }
